@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Miao:regular');
+.app {
+    font-family: 'Noto Sans Miao', sans-serif;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1c20;
+    color: #fff;
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    &__content {
+        border-radius: 10px;
+        background-color: #103133;
+        box-shadow: 7px 7px 14px #081014, -7px -7px 14px #122229;
+        width: fit-content;
+    }
+    &__wrapp {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+        padding: 2.1875rem;
+        border-top: 2px solid #0CEBEB;
+    }
+}

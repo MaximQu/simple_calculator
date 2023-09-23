@@ -1,0 +1,70 @@
+.numbers {
+    display: grid;
+    grid-template-areas:
+        'seven eight nine'
+        'four five six'
+        'one two three'
+        'zero zero dot';
+
+    gap: 5px;
+    max-width: 330px;
+    .seven {
+        grid-area: seven;
+    }
+    .eight {
+        grid-area: eight;
+    }
+    .nine {
+        grid-area: nine;
+    }
+    .four {
+        grid-area: four;
+    }
+    .five {
+        grid-area: five;
+    }
+    .six {
+        grid-area: six;
+    }
+    .one {
+        grid-area: one;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three {
+        grid-area: three;
+    }
+    .zero {
+        grid-area: zero;
+    }
+    .dot {
+        grid-area: dot;
+    }
+
+    &__item {
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border-radius: 10px;
+        background: #0c2426;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.50), -3px -3px 3px 0px rgba(12, 235, 235, 0.10);
+        cursor: pointer;
+        transition: transform 0.05s linear;
+
+        &.zero {
+            width: 100%;
+        }
+
+        &:active {
+            box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+            transform: scale(0.95);
+        }
+    }
+}

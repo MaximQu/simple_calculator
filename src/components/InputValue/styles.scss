@@ -1,0 +1,18 @@
+.input__block {
+    padding: 0.9375rem 0;
+    text-align: right;
+    font-size: 1.625rem;
+    margin-inline: 1.25rem;
+
+    span {
+        display: block;
+        font-size: 1.125rem;
+        margin-bottom: 0.625rem;
+        color: brown;
+    }
+}
+
+.input__value {
+    min-height: 1.6875rem;
+    color: #0CEBEB;
+}

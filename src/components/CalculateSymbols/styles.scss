@@ -1,0 +1,32 @@
+.symbol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+    &__item {
+        font-size: 24px;
+        border-radius: 5px;
+        padding: 5px;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        color: #0CEBEB;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: #0d191e;
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.50), -3px -3px 3px 0px rgba(12, 235, 235, 0.10);
+        transition: transform 0.05s linear, box-shadow 0.1s linear;
+        cursor: pointer;
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
